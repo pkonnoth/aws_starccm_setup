@@ -35,6 +35,22 @@ echo xfce4-session > ~/.xsession
 - Open **port 3389** in your AWS security group to allow RDP connections.  
 - You can now connect to your instance using **Windows Remote Desktop (RDP)** or any RDP client with your instance’s **public IP address**.
 
+### ⚠️ Set a Password for XRDP Login
+Since AWS instances use key-based SSH authentication, no password exists by default — but XRDP requires one.  
+Set a password for the default Ubuntu user with:
+
+```bash
+sudo passwd ubuntu
+```
+
+Then enter and confirm a password when prompted.  
+You will use this password to log in via Remote Desktop.
+
+When connecting with RDP:
+- **Username:** `ubuntu`  
+- **Password:** *(the one you just created)*  
+- **Session:** Select `Xorg` if prompted
+
 ---
 
 ## 3. Download and Install STAR-CCM+
