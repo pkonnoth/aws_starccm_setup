@@ -1,4 +1,3 @@
-Sure — here’s the **raw Markdown file content**, ready to copy directly into a `.md` file (no extra formatting around it):
 
 ---
 
@@ -69,13 +68,6 @@ When connecting with RDP:
 1. Go to the official **[Siemens STAR-CCM+ download page](https://plm.sw.siemens.com/en-US/simcenter/fluids/star-ccm-star-cd/)**.
 2. **Sign in** with your Siemens account (license or trial required).
 3. Download the desired version’s `.tar.gz` installer file for **Linux**.
-4. Upload or transfer the file to your AWS instance using `scp` or another method.
-
-Example upload from local machine:
-
-```bash
-scp -i your-key.pem starccm-version.tar.gz ubuntu@<your-instance-public-dns>:~
-```
 
 ### Extract the archive
 
